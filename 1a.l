@@ -7,7 +7,7 @@
 [0-9]* {identifiers++;printf("\n Identifiers"); ECHO;}
 [*|+] {operators++;printf("\nOperators:");ECHO;}
 "(" {braces++;}
-")" {braces++;}
+")" {braces--;}
 [""]  {spaces++;}
 .|\n {;}
 %%
